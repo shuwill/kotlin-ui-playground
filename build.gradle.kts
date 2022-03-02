@@ -17,7 +17,10 @@ repositories {
 }
 
 dependencies {
-    implementation(compose.desktop.currentOs)
+    implementation(compose.desktop.macos_arm64)
+    implementation("org.bouncycastle:bcprov-jdk15on:1.69")
+    implementation("org.bouncycastle:bcpkix-jdk15on:1.69")
+
 }
 
 tasks.withType<KotlinCompile> {
